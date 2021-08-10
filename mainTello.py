@@ -27,16 +27,14 @@ def mainTello():
     me.yaw_velocity = 0
     me.speed = 0
 
-    # dir = 0
+
     global dir
-    # print(me.get_battery())
+
 
     me.streamoff()
     me.streamon()
 
-    # c = cv2.VideoCapture(0)
-    # c.set(3, width)
-    # c.set(4, height)
+
 
 
     def em():
@@ -147,8 +145,7 @@ def mainTello():
 
         getCountours(imgDil, imgConts)
 
-        # cv2.imshow('track', np.vstack((imgConts,imgConts)))
-        # cv2.imshow("Orig", np.vstack((result, f)))
+
         display(imgConts)
 
         if startCount == 0:
@@ -182,8 +179,6 @@ def mainTello():
             print(me.get_battery())
 
 
-
-        # cv2.imshow("Test", np.hstack((np.vstack((imgConts, imgConts)))))
         cv2.imshow("a",  img)
         cv2.imshow("2", result)
         cv2.imshow("6", imgConts)
